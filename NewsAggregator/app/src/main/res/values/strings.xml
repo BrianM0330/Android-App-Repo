@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NewsAggregator</string>
+    <string name ="drawer_open"> Open Drawer</string>
+    <string name ="drawer_close"> Close Drawer</string>
+    <string name="bbc_news">BBC News</string>
+    <string name="topics">Topics</string>
+    <string name="languages">Languages</string>
+    <string name="countries">Countries</string>
+    <string name="no_author">No Author</string>
+
+</resources>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.knowyourgovernment.PoliticianDetailed">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/politician_page_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/politician_page_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/politician_page_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/politician_page_location" />
+
+        <TextView
+            android:id="@+id/politician_page_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/politician_page_position" />
+
+        <TextView
+            android:id="@+id/politician_page_party"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/politician_page_location" />
+
+        <ImageButton
+            android:id="@+id/politician_page_portrait"
+            android:layout_width="0dp"
+            android:layout_height="283dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/politician_page_party" />
+
+        <ImageView
+            android:id="@+id/politician_page_logo"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/politician_page_portrait"
+            app:layout_constraintStart_toStartOf="@+id/politician_page_portrait"
+            app:srcCompat="@drawable/dem_logo" />
+
+        <TextView
+            android:id="@+id/politician_page_addressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Address"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/politician_page_name" />
+
+        <TextView
+            android:id="@+id/politician_page_address"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/politician_page_addressLabel"
+            app:layout_constraintTop_toTopOf="@+id/politician_page_addressLabel" />
+
+        <TextView
+            android:id="@+id/politician_page_phoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Phone"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/politician_page_address" />
+
+        <TextView
+            android:id="@+id/politician_page_website"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/politician_page_phone"
+            app:layout_constraintTop_toTopOf="@+id/politician_page_websiteLabel" />
+
+        <TextView
+            android:id="@+id/politician_page_websiteLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Website"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/politician_page_phone" />
+
+        <TextView
+            android:id="@+id/politician_page_phone"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:text="Phone#Phone#"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/politician_page_address"
+            app:layout_constraintTop_toTopOf="@+id/politician_page_phoneLabel" />
+
+        <ImageButton
+            android:id="@+id/fbButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:onClick="FacebookClicked"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/politician_page_websiteLabel"
+            app:layout_constraintTop_toBottomOf="@+id/politician_page_website"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageButton
+            android:id="@+id/twitterButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:onClick="TwitterClicked"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/politician_page_website"
+            app:layout_constraintTop_toBottomOf="@+id/politician_page_website"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageButton
+            android:id="@+id/youtubeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:onClick="YoutubeClicked"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/twitterButton"
+            app:layout_constraintTop_toBottomOf="@+id/politician_page_website"
+            app:srcCompat="@drawable/youtube" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">hw2</string>
+    <string name="title_activity_note_creation">noteCreation</string>
+    <string name="file_name">Note.json</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="my_notes">My Notes</string>
+    <string name="_2020_brian_mendoza">© 2020, Brian Mendoza</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="title_for_my_new_note">Title For My New Note</string>
+    <string name="testing_note_testing_note_testing_note_testing_note">Testing Note Testing Note Testing Note Testing Note</string>
+    <string name="sun_feb_10_11_11_am">Sun Feb 10, 11:11 AM</string>
+</resources>
